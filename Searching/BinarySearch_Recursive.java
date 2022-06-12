@@ -36,3 +36,7 @@ public class BinarySearch_Recursive {
         System.out.println(result);
     }
 }
+
+// Time & Space Complexity
+// Time Complexity : O(log n)
+// Auxiliary Space : O(log n)
