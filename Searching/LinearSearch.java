@@ -21,3 +21,8 @@ public class LinearSearch {
         LinearSearch.linearSearch(arr,3);
     }
 }
+
+// Worst complexity: O(n)
+// Average complexity: O(n)
+// Best performance: O(n/2)
+// Space complexity: O(1)
