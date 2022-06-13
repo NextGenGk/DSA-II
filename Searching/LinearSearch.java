@@ -22,7 +22,17 @@ public class LinearSearch {
     }
 }
 
-// Worst complexity: O(n)
-// Average complexity: O(n)
-// Best performance: O(n/2)
-// Space complexity: O(1)
+// Algorithms (Approach) ->
+/* A simple approach is to do a linear search, i.e
+
+1. Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
+2. If value matches with an element, return the index.
+3. If value doesn’t match with any of elements, return -1.
+*/
+
+// Time & Space Complexity ->
+/* Worst complexity: O(n)
+   Average complexity: O(n)
+   Best performance: O(n/2)
+   Space complexity: O(1)
+*/
