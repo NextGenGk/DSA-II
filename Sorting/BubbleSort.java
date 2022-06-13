@@ -19,7 +19,8 @@ public class BubbleSort {
         for (int i=0; i<n-1; i++) {
             // Inner Loop for all elements (So, each time biggest element is placed on last cell)
             for (int j=0; j<n-i-1; j++) {
-                if (arr[j] > arr[j + 1]) {
+                // If next element is smaller than previous element, than swap it
+                if (arr[j+1] < arr[j]) {
                     // swap arr[j+1] and arr[j]
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
