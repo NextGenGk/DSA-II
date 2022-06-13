@@ -46,7 +46,17 @@ public class BinarySearch_Iterative {
     }
 }
 
-//  Worst complexity: O(log n)
-//  Average complexity: O(log n)
-//  Best complexity: O(1)
-//  Space complexity: O(1)
+/*
+Step-by-step Binary Search Algorithm: We basically ignore half of the elements just after one comparison.
+
+1. Compare x with the middle element.
+2. If x matches with the middle element, we return the mid index.
+3. Else If x is greater than the mid element, then x can only lie in the right half subarray after the mid element. So we recur for the right half.
+4. Else (x is smaller) recur for the left half.
+ */
+
+
+/* Worst complexity: O(log n)
+   Average complexity: O(log n)
+   Best complexity: O(1)
+   Space complexity: O(1) */
