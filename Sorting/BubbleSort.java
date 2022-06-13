@@ -4,8 +4,7 @@ package Sorting;
 public class BubbleSort {
 
     // Print Method (Print all the sorted element)
-    void printArray(int arrNew[])
-    {
+    void printArray(int arrNew[]) {
         int n = arrNew.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arrNew[i] + " ");
@@ -18,7 +17,7 @@ public class BubbleSort {
 
         // Outer Loop
         for (int i=0; i<n-1; i++) {
-            // Inner Loop for all elements
+            // Inner Loop for all elements (So, each time biggest element is placed on last cell)
             for (int j=0; j<n-i-1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // swap arr[j+1] and arr[j]
@@ -39,3 +38,10 @@ public class BubbleSort {
         bs.printArray(arr);
     }
 }
+
+/*
+Worst complexity: n^2
+Average complexity: n^2
+Best complexity: n
+Space complexity: 1
+ */
