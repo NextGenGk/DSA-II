@@ -73,3 +73,39 @@ public class QuickSort {
         printArray(arr,arr.length);
     }
 }
+
+// Algorithm (approach) -
+
+/* This function takes last element as pivot, places the pivot element at its correct position in sorted array,
+ and places all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot
+
+partition (arr[], start, end)
+
+{
+
+    // pivot (Element to be placed at right position)
+pivot = arr[end];
+
+ i = (start – 1)  // Index of smaller element and indicates the
+// right position of pivot found so far
+
+for (j = start; j <= end- 1; j++) {
+
+    If current element is smaller than the pivot
+    if (arr[j] < pivot){
+    i++;    // increment index of smaller element
+     swap arr[i] and arr[j]
+     }
+ }
+
+    swap arr[i + 1] and arr[end])
+return (i + 1)
+}
+*/
+
+/* Time & Space Complexity -
+    Worst complexity: O(n^2)
+    Average complexity: O[n*log(n)]
+    Best complexity: O[n*log(n)]
+    Space complexity: O[(log(n)]
+ */
