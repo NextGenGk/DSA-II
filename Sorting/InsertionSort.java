@@ -20,7 +20,7 @@ public class InsertionSort {
             // Move elements of arr[0..i-1], that are
             // greater than key, to one position ahead
             // of their current position
-            while (j>=0 && arr[j] > temp) {
+            while (arr[j] > temp && j>=0) {
                 arr[j+1] = arr[j];
                 j--;
             }
@@ -37,3 +37,22 @@ public class InsertionSort {
         printArray(arr);
     }
 }
+
+// Algorithms (approach) ->
+/*
+ To sort an array of size N in ascending order:
+
+1. Iterate from arr[1] to arr[N] over the array.
+2. Compare the current element (key) to its predecessor.
+3. If the key element is smaller than its predecessor,
+   compare it to the elements before. Move the greater
+   elements one position up to make space for the swapped element.
+ */
+
+// TIme & Space Complexity ->
+/*
+    Worst complexity: O(n^2)
+    Average complexity: O(n^2)
+    Best complexity: O(n)
+    Space complexity: O(1)
+ */
