@@ -6,7 +6,7 @@ public class MergeSort {
     // Main Merge Sort Function
     public static void conquer(int[] arr, int startIndex, int mid, int endIndex) {
         // Create an empty merged (temp) array (size of array)
-        int merged[] = new int[startIndex - endIndex + 1];
+        int merged[] = new int[endIndex - startIndex + 1];
 
         // Then adding the elements on merged array
         // index1 track 1st subArray
@@ -49,7 +49,7 @@ public class MergeSort {
         }
 
         // To copy the Element of Merge inside the original array
-        for (int i = 0, j = startIndex; i < merged.length; i++) {
+        for (int i = 0, j = startIndex; i < merged.length; i++, j++) {
             arr[j] = merged[i];
         }
     }
@@ -64,7 +64,7 @@ public class MergeSort {
         // First we find middle index
         int mid = startIndex + (endIndex - startIndex) / 2;
         // Left subArray ( Recursive Call )
-        mergeSort(arr, startIndex, mid - 1);
+        mergeSort(arr, startIndex, mid);
         // Right subArray ( Recursive Call )
         mergeSort(arr, mid + 1, endIndex);
 
