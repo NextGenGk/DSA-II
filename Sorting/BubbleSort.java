@@ -40,9 +40,17 @@ public class BubbleSort {
     }
 }
 
+// Algorithms (Approach) ->
 /*
-Worst complexity: n^2
-Average complexity: n^2
-Best complexity: n
-Space complexity: 1
+1. Outer loop for index - 1 element
+2. Inner loop for adjacent element
+3. Comparing 2nd element to 1st element & So on...
+4. Swap (if 2nd element is smaller than 1st element) & So on...
+*/
+
+/* Time & Space Complexity
+    Worst complexity: O(n^2)
+    Average complexity: O(n^2)
+    Best complexity: O(n)
+    Space complexity: O(1)
  */
