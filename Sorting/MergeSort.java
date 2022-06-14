@@ -85,3 +85,27 @@ public class MergeSort {
         System.out.println();
     }
 }
+
+// Algorithm (approach) -
+/*
+1. Start
+2. Declare array and start, end, mid variable
+3. Perform merge function.
+        mergesort(array,start,end)
+        mergesort (array, start, end)
+        if start > end
+        return
+        mid= (start+end)/2
+        mergesort(array, start, mid)
+        mergesort(array, mid+1, end)
+        merge(array, left, mid, right)
+4. Stop
+ */
+
+// Time & Space Complexity
+/*
+    Worst complexity: O[n*log(n)]
+    Average complexity: O[n*log(n)]
+    Best complexity: O[n*log(n)]
+    Space complexity: O(n)
+ */
