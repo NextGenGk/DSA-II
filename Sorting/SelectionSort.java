@@ -13,7 +13,7 @@ public class SelectionSort {
     // Selection Sort Function
     public static void selectionSort(int[] arr) {
         // One by one move boundary of unsorted subArray
-        for (int i=0; i<arr.length; i++) {
+        for (int i=0; i<arr.length-1; i++) {
             // Find the minimum element in unsorted array
             int minElementIndex = i;
             for (int j=i+1; j< arr.length; j++) {
