@@ -15,18 +15,18 @@ public class SelectionSort {
         // One by one move boundary of unsorted subArray
         for (int i=0; i<arr.length; i++) {
             // Find the minimum element in unsorted array
-            int minElement = i;
+            int minElementIndex = i;
             for (int j=i+1; j< arr.length; j++) {
-                if (arr[j] < arr[minElement]) {
-                    minElement = j;
+                if (arr[j] < arr[minElementIndex]) {
+                    minElementIndex = j;
                 }
             }
             // Swapping
             // swap the smallest element with the element at i
-            if (minElement != i) {
+            if (minElementIndex != i) {
                 int temp = arr[i];
-                arr[i] = arr[minElement];
-                arr[minElement] = temp;
+                arr[i] = arr[minElementIndex];
+                arr[minElementIndex] = temp;
             }
         }
     }
