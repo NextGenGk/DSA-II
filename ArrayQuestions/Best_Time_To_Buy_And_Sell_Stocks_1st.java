@@ -27,8 +27,8 @@ public class Best_Time_To_Buy_And_Sell_Stocks_1st {
 
     // Main Function
     public static void main(String[] args) {
-        int[] arr = {5, 2, 6, 1, 4};
-        System.out.println(maxProfit(arr));
+        int[] prices = {5, 2, 6, 1, 4};
+        System.out.println(maxProfit(prices));
     }
 }
 
