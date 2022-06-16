@@ -11,6 +11,7 @@ public class Search_Element_In_Sorted_Or_Rotated_Array {
         // Ending index
         int high = arr.length-1;
 
+        // while low index is smaller & equal to high index
         while (low <= high) {
             // Find mid index / element
             int mid = low + (high - low)/2;
