@@ -10,7 +10,7 @@ public class Best_Time_To_Buy_And_Sell_Stocks_1st {
         // maxProfit 0
         int maxProfit = 0;
 
-        // Looping to arr.length
+        // Looping through prices.length
         for (int i=0; i<prices.length; i++) {
             // Find minimum prices to buy a stock
             minSoFar = Math.min(minSoFar, prices[i]);
@@ -43,7 +43,7 @@ when buy stock on day 2 & sell this stock on day 3 (2,6)
 // Algorithm -
 /*
 1. Declare variable minSoFar & maxProfit
-2. Looping to arr.length
+2. Looping through prices.length
 3. Find minimum price to buy this stock
 4. Find profit from minimum & prices[i]
 5. Find maximum profit
