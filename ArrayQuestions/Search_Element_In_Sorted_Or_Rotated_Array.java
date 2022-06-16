@@ -65,11 +65,11 @@ public class Search_Element_In_Sorted_Or_Rotated_Array {
 1. Compare x with the middle element.
 2. If x matches with the middle element, we return the mid index.
 3. Checking, If arr[low] is smaller than arr[mid], It means Left Part is Sorted
-4. Checking If key is present in the left subArray, then high = mid - 1
-5. Checking If key is not present in the left subArray, then low = mid + 1
+4. Checking if key is lies in the left sorted array, then high = mid - 1
+5. Checking If key is not lies in the left subArray, then low = mid + 1
 6. Left Part is not Sorted, It means Right Part is Sorted
-7. Checking If key is present in the right subArray, then low = mid + 1
-8. Checking If key is present in the right subArray, then high = mid - 1
+7. Checking if key is lies in the right sorted array, then low = mid + 1
+8. Checking If key is lies in the right subArray, then high = mid - 1
 9. If value is not present in the array, return -1.
  */
 
