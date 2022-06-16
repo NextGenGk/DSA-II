@@ -1,6 +1,6 @@
 package ArrayQuestions;
 
-// Best Time To Buy & Sell Stocks I Class
+// Best Time To Buy & Sell Stocks I Class (Que - At most one transaction is allowed)
 public class Best_Time_To_Buy_And_Sell_Stocks_1st {
 
     // maxProfit Function
