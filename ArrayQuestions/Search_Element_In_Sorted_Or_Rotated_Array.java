@@ -22,22 +22,24 @@ public class Search_Element_In_Sorted_Or_Rotated_Array {
 
             // Checking, If arr[low] is smaller than arr[mid], It means Left Part is Sorted
             if (arr[low] < arr[mid]) {
+                // Checking if key is lies in the left sorted array
                 if (key >= arr[low] && key < arr[mid]) {
-                    // If key is present in the left subArray, then high = mid - 1
+                    // then high = mid - 1
                     high = mid - 1;
                 }
-                    // If key is not present in the left subArray, then low = mid + 1
+                    // If key is not lies in the left subArray, then low = mid + 1
                 else {
                     low = mid + 1;
                 }
             }
             // Left Part is not Sorted, It means Right Part is Sorted
             else {
+                // Checking if key is lies in the right sorted array
                 if (key > arr[mid] && key <= arr[high]) {
-                    // If key is present in the right subArray, then low = mid + 1
+                    // then low = mid + 1
                     low = mid + 1;
                 }
-                    // If key is present in the right subArray, then high = mid - 1
+                    // If key is lies in the right subArray, then high = mid - 1
                 else {
                     high = mid - 1;
                 }
