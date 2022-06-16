@@ -4,19 +4,19 @@ package ArrayQuestions;
 public class Best_Time_To_Buy_And_Sell_Stocks_1st {
 
     // maxProfit Function
-    static int maxProfit(int[] arr) {
+    static int maxProfit(int[] prices) {
         // Initialize minSoFar arr[0]
-        int minSoFar = arr[0];
+        int minSoFar = prices[0];
         // maxProfit 0
         int maxProfit = 0;
 
         // Looping to arr.length
-        for (int i=0; i<arr.length; i++) {
+        for (int i=0; i<prices.length; i++) {
             // Find minimum prices to buy a stock
-            minSoFar = Math.min(minSoFar, arr[i]);
+            minSoFar = Math.min(minSoFar, prices[i]);
 
             // Find profit
-            int profit = arr[i] - minSoFar;
+            int profit = prices[i] - minSoFar;
 
             // Maximum profit
             maxProfit = Math.max(maxProfit, profit);
@@ -45,7 +45,7 @@ when buy stock on day 2 & sell this stock on day 3 (2,6)
 1. Declare variable minSoFar & maxProfit
 2. Looping to arr.length
 3. Find minimum price to buy this stock
-4. Find profit from minimum & arr[i]
+4. Find profit from minimum & prices[i]
 5. Find maximum profit
 6. Finally return maxProfit
  */
