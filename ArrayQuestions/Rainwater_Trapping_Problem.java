@@ -8,9 +8,9 @@ public class Rainwater_Trapping_Problem {
 
     // Function for maximum amount of water
     static int trapRainWater(int n) {
-        // Left aux array
+        // Left aux array (& initialize with length of the array)
         int[] left = new int[n];
-        // right aux array
+        // Right aux array (& initialize with length of the array)
         int[] right = new int[n];
 
         // left[i] contains height of tallest bar to the
