@@ -29,7 +29,7 @@ public class Kth_Smallest_Element {
 
     // Main Function
     public static void main(String[] args) {
-        int[] arr = { 11, 3, 2, 1, 15, 5, 4, 45, 88, 96, 50, 45};
+        int[] arr = { 7, 4, 6, 3, 9, 1};
         int result = kthSmallest(arr, 3);
         System.out.println(result);
     }
