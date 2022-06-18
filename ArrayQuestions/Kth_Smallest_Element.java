@@ -9,17 +9,18 @@ public class Kth_Smallest_Element {
     // Function to find k smallest array element
     static int kthSmallest(int[] arr, int k) {
 
-        // Implementation using a Priority Queue (Max Heap) [Pass Comparator]
+        // Implementation using a Priority Queue [Pass Comparator]
         PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
 
-        // Loop through to length of the array
-        for (int i=0; i< arr.length; i++) {
-            // add current element
+        for (int i = 0; i < arr.length; ++i) {
+
+            // Insert elements into
+            // the priority queue
             pq.add(arr[i]);
 
-            // Checks, If size of the priority queue exceeds k
+            // If size of the priority
+            // queue exceeds k
             if (pq.size() > k) {
-                // than remove topmost element
                 pq.poll();
             }
         }
