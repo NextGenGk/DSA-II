@@ -1,5 +1,6 @@
 package ArrayQuestions;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 // Kth Largest Element Class
@@ -8,23 +9,20 @@ public class Kth_Largest_Element {
     // Function to find k largest array element
     static int kthLargest(int[] arr, int k) {
 
-        // Implementation using a Priority Queue
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        // Implementation using
+        // a Priority Queue
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
 
-        // Loop through kth Element (put kth element in the min heap)
-        for (int i=0; i<k; i++) {
-            // Insert elements into the priority queue
+        for (int i = 0; i < arr.length; ++i) {
+
+            // Insert elements into
+            // the priority queue
             pq.add(arr[i]);
-        }
 
-        // Loop through (Start from kth element to length of the array)
-        for (int i=k ; i<arr.length; i++) {
-            // Check, if the current element is bigger than current top element, then
-            if (pq.peek() < arr[i]) {
-                // remove
+            // If size of the priority
+            // queue exceeds k
+            if (pq.size() > k) {
                 pq.poll();
-                // add (current big element)
-                pq.add(arr[i]);
             }
         }
         // finally return top element
@@ -50,13 +48,11 @@ Find Smallest Element then use (Max Heap) [Use Comparator - Collections.reverseO
 
 // Algorithm -
 /*
-1. Create a Min Heap (Priority Queue)
-2. Put kth element in the min heap (Loop)
-3. And insert the element in the priority queue
-4. Start from kth element to length of the array (Loop)
-5. Check, if the current element is bigger than current top element, then remove this element
-6. And adding the bigger element
-7. Finally return min heap top most element
+1. Create a Max Heap (Priority Queue)
+2. Loop through to length of the array
+3. And add current element
+4. Checks, If size of the priority queue exceeds k, than remove (Min Heap) topmost element
+5. Finally return (Min Heap) topmost element
  */
 
 // Time & Space Complexity -
