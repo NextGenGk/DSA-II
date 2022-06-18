@@ -30,7 +30,7 @@ public class Kth_Smallest_Element {
 
     // Main Function
     public static void main(String[] args) {
-        int[] arr = { 7, 4, 6, 3, 9, 1};
+        int[] arr = {7, 4, 6, 3, 9, 1};
         int result = kthSmallest(arr, 3);
         System.out.println(result);
     }
@@ -44,7 +44,7 @@ Find Smallest Element then use (Max Heap) [Use Comparator - Collections.reverseO
 
 
 // Output -
-// 3 smallest elements are : 3  2  1
+// 4 (smallest)
 
 // Algorithm -
 /*
