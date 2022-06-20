@@ -12,7 +12,7 @@ public class Product_Array_Except_Self {
         // Initialize 0 (zero) index with the value of 1
         output[0] = 1;
 
-        // left prefix product
+        // left prefix product (Loop through nums.length)
         for(int i=1;i<nums.length;i++){
             output[i] = output[i-1] * nums[i-1];
         }
