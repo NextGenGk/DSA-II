@@ -25,6 +25,7 @@ public class Reverse_Array_Recursive {
         reverseArray(arr, start + 1, end - 1);
     }
 
+    // Main Function
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         int n = arr.length;
