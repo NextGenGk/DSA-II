@@ -4,12 +4,13 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Stack;
 
+// Merge Overlapping Intervals Class
 public class Merge_Overlapping_Intervals {
 
     // The main function that takes a set of intervals, merges
     // overlapping intervals and prints the result
-    public static void mergeIntervals(Interval arr[])
-    {
+    // Merge Interval Function
+    public static void mergeIntervals(Interval[] arr) {
         // Test if the given set has at least one interval
         if (arr.length <= 0)
             return;
@@ -29,20 +30,18 @@ public class Merge_Overlapping_Intervals {
         stack.push(arr[0]);
 
         // Start from the next interval and merge if necessary
-        for (int i = 1 ; i < arr.length; i++)
-        {
+        for (int i = 1 ; i < arr.length; i++) {
             // get interval from stack top
             Interval top = stack.peek();
 
             // if current interval is not overlapping with stack top,
             // push it to the stack
-            if (top.end < arr[i].start)
+            if (top.end < arr[i].start) {
                 stack.push(arr[i]);
-
+            }
                 // Otherwise update the ending time of top if ending of current
                 // interval is more
-            else if (top.end < arr[i].end)
-            {
+            else if (top.end < arr[i].end) {
                 top.end = arr[i].end;
                 stack.pop();
                 stack.push(top);
@@ -51,15 +50,15 @@ public class Merge_Overlapping_Intervals {
 
         // Print contents of stack
         System.out.print("The Merged Intervals are: ");
-        while (!stack.isEmpty())
-        {
+        while (!stack.isEmpty()) {
             Interval t = stack.pop();
             System.out.print("["+t.start+","+t.end+"] ");
         }
     }
 
-    public static void main(String args[]) {
-        Interval arr[]=new Interval[4];
+    // Main Function
+    public static void main(String[] args) {
+        Interval[] arr=new Interval[4];
         arr[0]=new Interval(6,8);
         arr[1]=new Interval(1,9);
         arr[2]=new Interval(2,4);
@@ -68,12 +67,30 @@ public class Merge_Overlapping_Intervals {
     }
 }
 
-class Interval
-{
+// Interval Class
+class Interval {
     int start,end;
-    Interval(int start, int end)
-    {
+    Interval(int start, int end) {
         this.start=start;
         this.end=end;
     }
 }
+
+// Output -
+// The Merged Intervals are: [1,9]
+
+// Algorithm -
+/*
+1. Sort the intervals based on the increasing order of starting time.
+2. Push the first interval into a stack.
+3. For each interval do the following:
+    1. If the current interval does not overlap with the top of the stack then, push the current interval into the stack.
+    2. If the current interval overlap with the top of the stack then, update the stack top with the ending time of the current interval.
+4. The end stack contains the merged intervals.
+ */
+
+// Time & Space Complexity -
+/*
+Time - O(n*log(n))
+Space - O(n)
+ */
