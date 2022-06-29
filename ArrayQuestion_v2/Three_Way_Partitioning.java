@@ -18,7 +18,7 @@ public class Three_Way_Partitioning {
         int right = arr.length-1;
 
         // Traverse elements from left
-        for (int i=0; i<=arr.length; i++) {
+        for (int i=0; i<=right; i++) {
             // If current element is smaller than
             // range, put it on next available smaller
             // position.
@@ -50,7 +50,7 @@ public class Three_Way_Partitioning {
 // Output
 /*
 Modified array
-1 2 3 3 4
+1 2 4 3 3
  */
 
 // Algorithm -
