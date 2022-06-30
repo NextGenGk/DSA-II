@@ -50,7 +50,7 @@ public class Valid_Palindrome {
     1. If current char is a digit OR current char is letter
        add current char to new string
 4. Loop through new string length by 2 & check
-    1. If current char is not equal to current char of last index, return false;
+    1. If current char is not equal to current char of last index, return false
  */
 
 // Time & Space Complexity -
