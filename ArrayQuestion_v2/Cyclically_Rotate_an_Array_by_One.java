@@ -1,14 +1,9 @@
 package ArrayQuestion_v2;
 
+import java.util.Arrays;
+
 // Cyclically Rotate Function
 public class Cyclically_Rotate_an_Array_by_One {
-
-    // Print Array Function
-    static void printArray(int[] arr) {
-        for (int i=0; i< arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
 
     // Initialize an Array
     static int arr[] = new int[]{1, 2, 3, 4, 5};
@@ -17,21 +12,25 @@ public class Cyclically_Rotate_an_Array_by_One {
     static void rotate() {
         int x = arr[arr.length-1];
         for (int i=arr.length-1; i>0; i--) {
-            arr[i] = arr[i-1];
-            arr[0] = x;
+            arr[i] = arr[i - 1];
         }
+        arr[0] = x;
     }
 
     // Main Function
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        System.out.println("Given Array is");
+        System.out.println(Arrays.toString(arr));
+
         rotate();
-        printArray(arr);
+
+        System.out.println("Rotated Array is");
+        System.out.println(Arrays.toString(arr));
     }
 }
 
 // Output -
-// 1,2,3,4,5
+// 5,1,2,3,4
 
 // Algorithm -
 /*
