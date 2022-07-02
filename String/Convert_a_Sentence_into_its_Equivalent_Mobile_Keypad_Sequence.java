@@ -4,7 +4,7 @@ package String;
 public class Convert_a_Sentence_into_its_Equivalent_Mobile_Keypad_Sequence {
 
     // Print Sequence Function
-    static String printSequence(String arr[], String input) {
+    static String printSequence(String[] arr, String input) {
         String output = "";
 
         // length of input string
@@ -31,7 +31,7 @@ public class Convert_a_Sentence_into_its_Equivalent_Mobile_Keypad_Sequence {
     // Main Function
     public static void main(String[] args) {
         // storing the sequence in array
-        String str[] = {"2","22","222",
+        String[] str = {"2","22","222",
                 "3","33","333",
                 "4","44","444",
                 "5","55","555",
