@@ -21,7 +21,7 @@ public class Search_Element_In_Sorted_Or_Rotated_Array {
             }
 
             // Checking, If arr[low] is smaller than arr[mid], It means Left Part is Sorted
-            if (arr[low] < arr[mid]) {
+            if (arr[low] <= arr[mid]) {
                 // Checking if key is lies in the left sorted array
                 if (key >= arr[low] && key < arr[mid]) {
                     // then high = mid - 1
